@@ -6,13 +6,43 @@
 </head>
 <body>
 
-<div></div>
-<div></div>
-<h1></h1>
-<p></p>
-<h2></h2>
+<div id="draw">カードを引く</div>
+<div id="battle">勝負に挑む</div>
+<h1 id="player_point"></h1>
+<p id="text"></p>
+<h2 id="result"></h2>
 
 <script type="text/javascript">
+	var card = Math.floor( Math.random() * 5 )+1;
+	var player=0;
+	var enemy=0;
+
+  $("#draw").on("click",function(){
+  	$('#text').text('カードは'+card+'でした');
+  	player =player + card;
+  	$('#player_point').text('現在プレイヤーの数字は'+player+'です');
+  });
+
+   $("#battle").on("click",function(){
+  	enemy=Math.floor( Math.random() * 5 )+6;
+  	if(player<=10){
+	  	if(player<enemy){
+	  	$('#result').text('負けました');
+	  	}
+	  	else if(player>enemy){
+	  	$('#result').text('勝ちました');
+	  	}
+	  	else if(player===enemy){
+	  	$('#result').text('引き分けです');
+	  	}
+  	}else if(player>11){
+
+	  	$('#result').text('負けました');
+
+  	}
+
+  });
+
 </script>
 
 </body>
