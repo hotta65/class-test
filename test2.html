@@ -15,14 +15,19 @@
 
 <p>この要素を非表示にしてください</p>
 
-<div>この要素を非表示にしてください</div>
+<div id="targetdiv">この要素を非表示にしてください</div>
 <div>この要素は非表示にしないでください</div>
 
 <h2>この要素をクリックするたびにspecialクラスを付ける/足す（トグル）をするようにしてください</h2>
 
 <script type="text/javascript">
 //ここに処理を書く
+$("p").hide();
+$("#targetdiv").hide();
 
+$("h2").on("click",function(){
+	$("h2").toggleClass("special")
+})
 </script>
 
 </body>
