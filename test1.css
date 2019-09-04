@@ -1,0 +1,37 @@
+body{
+	width: 1000px;
+	margin: 0px auto;
+}
+header{
+	text-align: center;
+	background-color: #0E7AC4;
+}
+h1{
+	padding: 30px 0px;
+	color: #FFFFFF;
+}
+.sub_title{
+	text-align: center;
+	background-color: #58BE89;
+}
+h2{
+	padding: 10px 0px;
+	color: #FFFFFF;
+}
+
+#curriculum{
+	width: 800px;
+	padding: 20px 0px 20px 30px; 
+	margin: 0px auto;
+	border: thin solid #000;
+
+}
+
+#Graduate_after{
+	width: 800px;
+	padding: 20px 0px 20px 30px; 
+	margin: 0px auto;
+	border: thin solid #000;
+	font-size: 1.2em;
+}
+
